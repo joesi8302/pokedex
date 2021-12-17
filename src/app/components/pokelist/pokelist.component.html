@@ -1,0 +1,6 @@
+
+<div *ngIf="tempList" >
+    <div class="poke-list-container" *ngFor="let element of tempList">
+        <div class="poke-item" (click)="goToDetails($event)">{{element.name}}</div>
+    </div>
+</div>
